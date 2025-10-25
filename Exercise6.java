@@ -1,5 +1,7 @@
+
 // // Describes exception handling mechanism.
 // import java.util.Scanner;
+
 // class Exercise6{
 // public static void main(String[] args){
 // Scanner sc = new Scanner(System.in);
@@ -20,9 +22,10 @@
 // }
 // }
 
-// Illustrating Multiple catch clauses.
+// // Illustrating Multiple catch clauses.
 
 // import java.util.*;
+
 // class Exercise6{
 // public static void main(String[] args){
 // Scanner sc = new Scanner(System.in);
@@ -50,45 +53,43 @@
 // }
 
 // // * Creation of Java Built-in Exceptions.
-// class Exercise6{
-// public static void main(String[] args){
-// int n =0;
-// int m = 1;
-// try{
-// float result = m/n;
-// System.out.println("the result is "+result);
-// }
-// catch(ArithmeticException e){
-// System.out.println("NOT possible "+e);
-// }
-// finally{
-// System.out.println("this block will execute without fail ");
-// }
-// }
+// class Exercise6 {
+//     public static void main(String[] args) {
+//         int n = 0;
+//         int m = 1;
+//         try {
+//             float result = m / n;
+//             System.out.println("the result is " + result);
+//         } catch (ArithmeticException e) {
+//             System.out.println("NOT possible " + e);
+//         } finally {
+//             System.out.println("this block will execute without fail ");
+//         }
+//     }
 // }
 
-//  * Creation of User Defined Exception
-import java.util.Scanner;
-class MyException extends Exception{
-    MyException(){
-        super("this is not good ");
-    }
-}
-class Exercise6{
-    public static void main(String[]args){
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a positive value :");
-        try{
-            int num = sc.nextInt();
-            if(num <= 0){
-                throw new MyException();
-            }
-        }
-        catch(MyException e){
-            System.out.println(e+"enter a positive number ");
-        }
-        finally{
-            System.out.println("this block is nonstop \"finally block \"");
-        }        
-    }
-}
+// // * Creation of User Defined Exception
+// import java.util.Scanner;
+
+// class MyException extends Exception {
+//     MyException() {
+//         super("this is not good ");
+//     }
+// }
+
+// class Exercise6 {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter a positive value :");
+//         try {
+//             int num = sc.nextInt();
+//             if (num <= 0) {
+//                 throw new MyException();
+//             }
+//         } catch (MyException e) {
+//             System.out.println(e + "enter a positive number ");
+//         } finally {
+//             System.out.println("this block is nonstop \"finally block \"");
+//         }
+//     }
+// }
